@@ -28,7 +28,7 @@ console.log(ticketPrice.toFixed(2));
 // esce NaN in console.log e non so perchè
 
 
-//buttonX.addEventListener('click', function()) { da qui dovrà comparire una table col resoconto di tutto
+buttonX.addEventListener('click', function()) { da qui dovrà comparire una table col resoconto di tutto
 
 
 
