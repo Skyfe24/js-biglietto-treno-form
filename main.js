@@ -14,6 +14,33 @@ const under18 = 18;
 const over65 = 65;
 console.log(elementName, elementKms, elementAge, pricePerKm, under18, over65, discountUnder18, discountOver65, buttonX);
 
+
+let ticketPrice = elementKms * pricePerKm; // esce NaN in console.log e non so perchè
+console.log(ticketPrice);
+
+
+//proviamo a calcolare in base agli age-span forniti:
+if (elementAge === "Junior") {
+    ticketPrice = ticketPrice * discountUnder18
+} else if (elementAge === "Senior") {
+    ticketPrice = ticketPrice * discountOver65
+
+}
+
+
+
+
+
+//buttonX.addEventListener('click', function()) { da qui dovrà comparire una table col resoconto di tutto
+
+
+
+//}
+
+
+
+
+
 //const sumKms = prompt(`Quanti km devi percorrere?`, 100).trim()
 //const userAge = prompt(`Quanti anni hai?`, 99).trim()
 //console.log(sumKms, userAge);
