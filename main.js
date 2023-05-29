@@ -9,10 +9,10 @@ const elementAge = document.getElementById('age').value;
 const pricePerKm = 0.21;
 const discountUnder18 = 0.8;
 const discountOver65 = 0.6;
-
+const button = document.getElementById(buttonX);
 const under18 = 18;
 const over65 = 65;
-console.log(total, elementName, elementKms, elementAge, pricePerKm, under18, over65, discountUnder18, discountOver65, buttonX);
+console.log(button, elementName, elementKms, elementAge, pricePerKm, under18, over65, discountUnder18, discountOver65, buttonX);
 
 
 let ticketPrice = elementKms * pricePerKm.toFixed(2); 
@@ -25,14 +25,18 @@ if (elementAge === "Junior")
  else if (elementAge === "Senior") 
     ticketPrice = ticketPrice * discountOver65;
 console.log(ticketPrice.toFixed(2));   
-// esce NaN in console.log e non so perchè
+// .toFixed(2) toglie sempre i decimali extra che non vogliamo
 
 
-buttonX.addEventListener('click', function()) { da qui dovrà comparire una table col resoconto di tutto
+button.addEventListener('click', function ()) { 
+    document.getElementById('NameResult').innerText = elementName.value;
+    document.getElementById('AgeResult').innerText = elementAge.value;
+    document.getElementById('PriceResult').innerText = ticketPrice.value;
+}
 
 
 
-//}
+
 
 
 
