@@ -28,11 +28,15 @@ console.log(ticketPrice.toFixed(2));
 // .toFixed(2) toglie sempre i decimali extra che non vogliamo
 
 
-button.addEventListener('click', function ()) { 
-    document.getElementById('NameResult').innerText = elementName.value;
-    document.getElementById('AgeResult').innerText = elementAge.value;
-    document.getElementById('PriceResult').innerText = ticketPrice.value;
-}
+buttonX.addEventListener("click", function(){
+    ticketPrice = elementKms * pricePerKm.toFixed(2); 
+    console.log(ticketPrice);
+
+    
+    document.getElementById('NameResult').innerText = elementName;
+    document.getElementById('AgeResult').innerText = elementAge;
+    document.getElementById('PriceResult').innerText = ticketPrice.toFixed(2);
+})
 
 
 
