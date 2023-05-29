@@ -31,6 +31,13 @@
 ----------------ESTENSIONE ESERCIZIO PRECEDENTE---------------
 1 inizio a commentare i prompt per tenerli fuori 
 2 creazione di tutti gli input necessari
+3 chiamo i miei input con le CONST:
+const elementButton = document.getElementById('buttonX');
+const elementName = document.getElementById('Name');
+const elementKms = document.getElementById('kms');
+const elementAge = document.getElementById('age');
+3.1 console.log su tutto: (elementName, elementKms, elementAge, pricePerKm, under18, over65, discountUnder18, discountOver65, buttonX);
+
 
 
 
